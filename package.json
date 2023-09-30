@@ -11,6 +11,6 @@
     "prettier-plugin-tailwindcss": "^0.2.1"
   },
   "scripts": {
-    "postinstall": "mv packages/* ."
+    "postinstall": "mv packages/core core && mv packages/vue3 vue3"
   }
 }
