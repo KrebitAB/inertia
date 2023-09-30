@@ -11,6 +11,6 @@
     "prettier-plugin-tailwindcss": "^0.2.1"
   },
   "scripts": {
-    "postinstall": "rm -r !(\"packages\") && mv packages/* ."
+    "postinstall": "mv packages/* ."
   }
 }
