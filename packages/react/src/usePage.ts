@@ -1,4 +1,4 @@
-import { Page, PageProps } from '@inertiajs/core'
+import { Page, PageProps } from '@krebitab/inertia-core'
 import { useContext } from 'react'
 import PageContext from './PageContext'
 

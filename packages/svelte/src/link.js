@@ -1,4 +1,4 @@
-import { mergeDataIntoQueryString, router, shouldIntercept } from '@inertiajs/core'
+import { mergeDataIntoQueryString, router, shouldIntercept } from '@krebitab/inertia-core'
 
 export default (node, options = {}) => {
   const [href, data] = hrefAndData(options)

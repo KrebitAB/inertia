@@ -59,7 +59,7 @@
     "react": "^16.9.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@inertiajs/core": "1.0.11",
+    "@krebitab/inertia-core": "1.0.11",
     "lodash.isequal": "^4.5.0"
   }
 }

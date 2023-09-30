@@ -1,4 +1,4 @@
-import { router, setupProgress } from '@inertiajs/core'
+import { router, setupProgress } from '@krebitab/inertia-core'
 import App from './App.svelte'
 import SSR from './SSR.svelte'
 import store from './store'

@@ -1,4 +1,4 @@
-import { router } from '@inertiajs/core'
+import { router } from '@krebitab/inertia-core'
 
 export default {
   created() {
