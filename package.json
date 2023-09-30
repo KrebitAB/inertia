@@ -9,8 +9,5 @@
     "prettier-plugin-organize-imports": "^3.2.1",
     "prettier-plugin-svelte": "^2.8.1",
     "prettier-plugin-tailwindcss": "^0.2.1"
-  },
-  "scripts": {
-    "postinstall": "mv packages/core core && mv packages/vue3 vue3"
   }
 }
