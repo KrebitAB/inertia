@@ -9,5 +9,10 @@
     "prettier-plugin-organize-imports": "^3.2.1",
     "prettier-plugin-svelte": "^2.8.1",
     "prettier-plugin-tailwindcss": "^0.2.1"
+  },
+  "scripts": {
+    "build-core": "cd packages/core && npm run clean && ./build.js && tsc --emitDeclarationOnly",
+    "build-vue3": "cd packages/vue3 && npm run clean && ./build.js && tsc --emitDeclarationOnly",
+    "prepublishOnly": "npm run build-core && npm run build-vue3"
   }
 }
