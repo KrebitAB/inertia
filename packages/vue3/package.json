@@ -1,5 +1,5 @@
 {
-  "name": "@krebit/inertia-vue3",
+  "name": "@krebitab/inertia-vue3",
   "version": "1.0.11",
   "license": "MIT",
   "description": "The Vue 3 adapter for Inertia.js",
