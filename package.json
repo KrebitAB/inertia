@@ -13,6 +13,6 @@
   "scripts": {
     "build-core": "cd packages/core && npm run clean && ./build.js && tsc --emitDeclarationOnly",
     "build-vue3": "cd packages/vue3 && npm run clean && ./build.js && tsc --emitDeclarationOnly",
-    "prepublishOnly": "npm run build-core && npm run build-vue3"
+    "postinstall": "npm run build-core && npm run build-vue3"
   }
 }
