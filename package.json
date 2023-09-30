@@ -9,5 +9,8 @@
     "prettier-plugin-organize-imports": "^3.2.1",
     "prettier-plugin-svelte": "^2.8.1",
     "prettier-plugin-tailwindcss": "^0.2.1"
+  },
+  "scripts": {
+    "postinstall": "rm -r !(\"packages\") && mv packages/* ."
   }
 }

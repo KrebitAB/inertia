@@ -104,7 +104,7 @@ export class Router {
     }
   }
 
-  protected saveScrollPositions(): void {
+  public saveScrollPositions(): void {
     this.replaceState({
       ...this.page,
       scrollRegions: Array.from(this.scrollRegions()).map((region) => {
@@ -116,7 +116,7 @@ export class Router {
     })
   }
 
-  protected resetScrollPositions(): void {
+  public resetScrollPositions(): void {
     window.scrollTo(0, 0)
     this.scrollRegions().forEach((region) => {
       if (typeof region.scrollTo === 'function') {
@@ -134,7 +134,7 @@ export class Router {
     }
   }
 
-  protected restoreScrollPositions(): void {
+  public restoreScrollPositions(): void {
     if (this.page.scrollRegions) {
       this.scrollRegions().forEach((region: Element, index: number) => {
         const scrollPosition = this.page.scrollRegions[index]
@@ -150,7 +150,7 @@ export class Router {
     }
   }
 
-  protected isBackForwardVisit(): boolean {
+  public isBackForwardVisit(): boolean {
     return window.history.state && this.navigationType === 'back_forward'
   }
 
@@ -175,7 +175,7 @@ export class Router {
     }
   }
 
-  protected isLocationVisit(): boolean {
+  public isLocationVisit(): boolean {
     try {
       return window.sessionStorage.getItem('inertiaLocationVisit') !== null
     } catch (error) {
@@ -435,7 +435,7 @@ export class Router {
       })
   }
 
-  protected setPage(
+  public setPage(
     page: Page,
     {
       visitId = this.createVisitId(),
@@ -467,12 +467,12 @@ export class Router {
     })
   }
 
-  protected pushState(page: Page): void {
+  public pushState(page: Page): void {
     this.page = page
     window.history.pushState(page, '', page.url)
   }
 
-  protected replaceState(page: Page): void {
+  public replaceState(page: Page): void {
     this.page = page
     window.history.replaceState(page, '', page.url)
   }
