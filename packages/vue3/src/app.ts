@@ -133,9 +133,7 @@ export function usePage<SharedProps extends PageProps>(): Page<SharedProps> {
       set: (value) => {
         page.value.props = value
         router.replaceState(
-          structuredClone(
-            page.value
-          )
+		  page.value
         )
       }
     }),
