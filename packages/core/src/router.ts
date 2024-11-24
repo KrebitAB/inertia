@@ -468,12 +468,14 @@ export class Router {
   }
 
   public pushState(page: Page): void {
-    this.page = JSON.parse(JSON.stringify(page))
+	page = JSON.parse(JSON.stringify(page))
+    this.page = page
     window.history.pushState(page, '', page.url)
   }
 
   public replaceState(page: Page): void {
-    this.page = JSON.parse(JSON.stringify(page))
+	page = JSON.parse(JSON.stringify(page))
+    this.page = page
     window.history.replaceState(page, '', page.url)
   }
 
