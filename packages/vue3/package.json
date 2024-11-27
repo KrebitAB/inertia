@@ -56,7 +56,7 @@
     "vue": "^3.0.0"
   },
   "dependencies": {
-    "@krebitab/inertia-core": "1.0.11",
+    "@krebitab/inertia-core": "1.0.16",
     "lodash.clonedeep": "^4.5.0",
     "lodash.isequal": "^4.5.0"
   }
