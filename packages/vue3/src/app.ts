@@ -133,11 +133,16 @@ export function usePage<SharedProps extends PageProps>(): Page<SharedProps> {
       set: (value) => {
         page.value.props = value
         router.replaceState(
-		  page.value
+		      page.value
         )
       }
     }),
-    url: computed(() => page.value?.url),
+    url: computed({
+		  get: () => page.value?.url,
+		  set: (value) => {
+		    page.value.url = value
+		  }
+	  }),
     component: computed(() => page.value?.component),
     version: computed(() => page.value?.version),
     scrollRegions: computed(() => page.value?.scrollRegions),
